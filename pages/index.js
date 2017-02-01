@@ -1,3 +1,7 @@
+import Page from '../components/layout'
+
 export default () => (
-  <div>Welcome to Kilix!</div>
+  <Page>
+    <div>Welcome to Kilix!</div>
+  </Page>
 )
