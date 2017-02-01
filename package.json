@@ -15,5 +15,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }
