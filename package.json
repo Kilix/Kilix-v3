@@ -1,0 +1,17 @@
+{
+  "name": "Kilix-v3",
+  "version": "1.0.0",
+  "description": "Site web de l'agence web kilix",
+  "main": "index.js",
+  "repository": "https://github.com/Kilix/Kilix-v3.git",
+  "author": "Stéphane Montlouis-Calixte <smontlouis@kilix.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^1.2.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
