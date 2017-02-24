@@ -8,6 +8,11 @@
   "license": "MIT",
   "dependencies": {
     "fela": "^4.2.0",
+    "fela-plugin-extend": "^4.2.5",
+    "fela-plugin-lvha": "^4.2.5",
+    "fela-plugin-named-media-query": "^4.2.5",
+    "fela-plugin-prefixer": "^4.2.5",
+    "fela-plugin-unit": "^4.2.5",
     "next": "2.0.0-beta.20",
     "react-fela": "^4.2.0"
   },
