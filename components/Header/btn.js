@@ -4,7 +4,7 @@ const headerBtn = () => ({
   zIndex: 1,
   position: 'fixed',
   top: 10,
-  right: 10,
+  right: 20,
   padding: 4,
   color: '#fff',
   fontWeight: 'bold',

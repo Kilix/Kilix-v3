@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
           <title>My page</title>
           <meta charset='UTF-8'/>
           <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
-          <link href="https://fonts.googleapis.com/css?family=Exo+2:300,600" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
           <style id='fela-stylesheet'>{this.props.css}</style>
         </Head>

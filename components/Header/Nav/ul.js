@@ -1,10 +1,5 @@
 import { createComponent } from 'react-fela'
 
-const nav = () => ({
-  width: 100,
-  height: 100,
-})
-
 const ul = () => ({
     listStyle: 'none',
     display: 'flex',
@@ -21,12 +16,4 @@ const ul = () => ({
     }
 })
 
-const Nav = createComponent(nav, 'nav')
-const Ul = createComponent(ul, 'ul')
-export default ({ children }) => (
-  <Nav>
-    <Ul>
-      {children}
-    </Ul>
-  </Nav>
-)
+export default createComponent(ul, 'ul')

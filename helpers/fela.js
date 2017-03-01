@@ -43,17 +43,21 @@ renderer.renderStatic({
   top: 0,
   left: 0,
   width: 100,
-  height: 100,
+  minHeight: '100%',
   padding: 0,
   margin: 0,
+  '-webkit-font-smoothing': 'subpixel-antialiased',
   fontFamily: "'Exo 2', sans-serif",
   fontSize: '14px',
-  fontWeight: 300,
+  fontWeight: 200,
   lineHeight: 1.5,
 }, 'body')
 renderer.renderStatic({
+  display: "flex",
+  flexDirection: 'column',
+  alignItems: 'stretch',
   width: 100,
-  height: 100,
+  minHeight: '100vh',
 }, ['#__next', '#__next>div', '#__next>div>div'])
 
 export function getRenderer () {
