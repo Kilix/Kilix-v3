@@ -8,10 +8,10 @@ export default ({isOpen, closeAction, path}) => (
   <Header {...{isOpen}}>
     <CloseBtn {...{closeAction}} />
     <Nav>
-      <Logo/>
-      <Item isActive={path === '/offres'} href='/offres' text='Offres' />
-      <Item isActive={path === '/projets'} href='/projets' text='Projets' />
-      <Item isActive={path === '/contact'} href='/contact' text='Contact' />
+      <Logo {...{closeAction}}/>
+      <Item isActive={path === '/offres'} href='/?page=offres' as='/offres' text='Offres' {...{closeAction}}/>
+      <Item isActive={path === '/projets'} href='/?page=projets' as='/projets' text='Projets' {...{closeAction}}/>
+      <Item isActive={path === '/contact'} href='/?page=contact' as='/contact' text='Contact' {...{closeAction}}/>
     </Nav>
   </Header>
 )

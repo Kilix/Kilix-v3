@@ -1,5 +1,5 @@
-import Page from '../../containers/layout'
-import Container from '../../containers/container'
+import Page from '../layout'
+import Container from '../container'
 
 import SpeContainer from './spe-container'
 import ContainerProjects from './container'
@@ -12,7 +12,6 @@ export default ({url}) => (
   <Page
     color='#FD8E2F'
     gradient='linear-gradient(0deg, #FDA228 0%, #FC6A3A 100%)'
-    path={url.pathname}
   >
     <SpeContainer>
       <Work/>

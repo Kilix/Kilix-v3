@@ -1,5 +1,5 @@
-import Page from '../../containers/layout'
-import Container from '../../containers/container'
+import Page from '../layout'
+import Container from '../container'
 
 import Card from './card'
 import ContainerOffers from './container'
@@ -10,7 +10,6 @@ export default ({url}) => (
   <Page
     color='#8E71F9'
     gradient='linear-gradient(270deg, #379DEB 0%, #9B6AFB 100%)'
-    path={url.pathname}
   >
     <Container>
       <Title>Une équipe d’experts du web pas comme les autres</Title>

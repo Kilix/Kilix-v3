@@ -58,7 +58,38 @@ renderer.renderStatic({
   alignItems: 'stretch',
   width: 100,
   minHeight: '100vh',
-}, ['#__next', '#__next>div', '#__next>div>div'])
+}, ['#__next', '#__next>div', '#__next>div>div', '#__next>div>div>span'])
+
+renderer.renderStatic(`
+.example-enter {
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  alignItems: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  clip-path: circle(0% at 100% 100vh);
+  transition: all .5s ease-in;
+}
+
+.example-enter.example-enter-active {
+  clip-path: circle(100vh at 100% 100vh);
+}
+.example-leave {
+  z-index: 1;
+  display: flex;
+  alignItems: stretch;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.example-leave.example-leave-active {
+}`)
 
 export function getRenderer () {
   return renderer

@@ -13,12 +13,13 @@
     "fela-plugin-prefixer": "^4.2.5",
     "fela-plugin-unit": "^4.2.5",
     "next": "2.0.0-beta.20",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-fela": "^4.2.0"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "devDependencies": {
     "standard": "^8.6.0"

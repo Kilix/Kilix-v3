@@ -1,14 +1,12 @@
-import Page from '../../containers/layout'
-
+import Page from '../layout'
 import ContainerContact from './container'
 import Text from './text'
 import Title from './title'
 
-export default ({url}) => (
+export default () => (
   <Page
     color='#ED4E4F'
     gradient='linear-gradient(0deg, #FE5E3C 0%, #D83A66 100%)'
-    path={url.pathname}
   >
     <ContainerContact>
         <Title>Rencontrez-nous !</Title>

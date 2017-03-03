@@ -43,11 +43,15 @@ const link = () => ({
   },
 })
 
-const CustomLink = ({ styles, children, href }) => (
+const CustomLink = ({ styles, children, href, as, closeAction }) => (
   <a
     className={styles}
     href={href}
-    onClick={(e) => {e.preventDefault(); Router.push(href)}}
+    onClick={(e) => {
+      e.preventDefault()
+      closeAction()
+      Router.push(href, as)
+    }}
   >
     {children}
   </a>
@@ -59,9 +63,9 @@ const mapStylesToProps =
 
 const Li = createComponent(li, 'li')
 const Link = connect(mapStylesToProps)(CustomLink)
-export default ({ children, href, isActive }) => (
+export default ({ children, href, as, isActive, closeAction }) => (
   <Li isActive={isActive}>
-    <Link href={href}>
+    <Link {...{href, as, closeAction}}>
       {children}
     </Link>
   </Li>

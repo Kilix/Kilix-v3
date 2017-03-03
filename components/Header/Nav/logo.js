@@ -9,8 +9,8 @@ const logo = () => ({
   },
 })
 
-const Logo = ({ styles, href }) => (
-  <Li href='/'>
+const Logo = ({ styles, href, closeAction }) => (
+  <Li href='/' as='/' {...{closeAction}} >
     { svg(styles) }
   </Li>
 )

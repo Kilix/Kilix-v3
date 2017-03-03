@@ -16,7 +16,7 @@ const logo = () => ({
 })
 
 const Logo = ({ styles }) => (
-  <Link prefetch href='/'>
+  <Link prefetch href='/?page=home' as='/'>
     <a>
       {svg(styles)}
     </a>
