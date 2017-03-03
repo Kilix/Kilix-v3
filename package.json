@@ -2,19 +2,24 @@
   "name": "Kilix-v3",
   "version": "1.0.0",
   "description": "Site web de l'agence web kilix",
-  "main": "index.js",
   "repository": "https://github.com/Kilix/Kilix-v3.git",
   "author": "Stéphane Montlouis-Calixte <smontlouis@kilix.fr>",
   "license": "MIT",
   "dependencies": {
     "fela": "^4.2.0",
+    "fela-plugin-extend": "^4.2.5",
+    "fela-plugin-lvha": "^4.2.5",
+    "fela-plugin-named-media-query": "^4.2.5",
+    "fela-plugin-prefixer": "^4.2.5",
+    "fela-plugin-unit": "^4.2.5",
     "next": "2.0.0-beta.20",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-fela": "^4.2.0"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "devDependencies": {
     "standard": "^8.6.0"
