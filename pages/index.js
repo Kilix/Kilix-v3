@@ -46,7 +46,7 @@ export default class Layout extends Component {
           <Logo isActive={(path==='/' || url.query.page === 'home')} />
           <HeaderBtn openAction={this._open.bind(this)}/>
           <ReactCSSTransitionGroup
-            transitionName="example"
+            transitionName="animation"
             transitionEnterTimeout={500}
             transitionLeaveTimeout={500}
           >

@@ -8,6 +8,7 @@ import Title from './title'
 
 export default ({url}) => (
   <Page
+    title='Offres'
     color='#8E71F9'
     gradient='linear-gradient(270deg, #379DEB 0%, #9B6AFB 100%)'
   >

@@ -18,9 +18,6 @@ const Planet = ({styles}) =>
     alt='planete'
   />
 
-const mapStylesToProps =
-  props =>
-    renderer =>
-      renderer.renderRule(planet, props)
+const mapStylesToProps = props => renderer => renderer.renderRule(planet, props)
       
 export default connect(mapStylesToProps)(Planet)

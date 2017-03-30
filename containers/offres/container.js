@@ -6,6 +6,7 @@ const containerOffers = () => ({
   flexDirection: 'row',
   justifyContent: 'space-around',
   alignItems: 'stretch',
+  maxWidth: '1400px',
   width: 100,
   paddingBottom: 25,
   tabletUp: {

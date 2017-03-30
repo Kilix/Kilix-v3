@@ -23,9 +23,5 @@ const Img = ({ styles, svg }) => {
       return poc(styles)
   }
 }
-const mapStylesToProps =
-  props =>
-    renderer =>
-      renderer.renderRule(img, props)
-      
+const mapStylesToProps = props => renderer => renderer.renderRule(img, props)
 export default connect(mapStylesToProps)(Img)

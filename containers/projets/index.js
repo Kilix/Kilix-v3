@@ -10,6 +10,7 @@ import Text from './text'
 
 export default ({url}) => (
   <Page
+    title='Projets'
     color='#FD8E2F'
     gradient='linear-gradient(0deg, #FDA228 0%, #FC6A3A 100%)'
   >

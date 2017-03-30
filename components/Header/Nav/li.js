@@ -56,10 +56,7 @@ const CustomLink = ({ styles, children, href, as, closeAction }) => (
     {children}
   </a>
 )
-const mapStylesToProps =
-  props =>
-    renderer =>
-      renderer.renderRule(link, props)
+const mapStylesToProps = props => renderer => renderer.renderRule(link, props)
 
 const Li = createComponent(li, 'li')
 const Link = connect(mapStylesToProps)(CustomLink)

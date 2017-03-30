@@ -61,7 +61,7 @@ renderer.renderStatic({
 }, ['#__next', '#__next>div', '#__next>div>div', '#__next>div>div>span'])
 
 renderer.renderStatic(`
-.example-enter {
+.animation-enter {
   z-index: 10;
   flex: 1;
   display: flex;
@@ -72,13 +72,13 @@ renderer.renderStatic(`
   width: 100%;
   height: 100vh;
   clip-path: circle(0% at 100% 100vh);
-  transition: all .5s ease-in;
+  transition: all .5s ease-in-out;
 }
 
-.example-enter.example-enter-active {
-  clip-path: circle(100vh at 100% 100vh);
+.animation-enter.animation-enter-active {
+  clip-path: circle(120vw at 100% 100vh);
 }
-.example-leave {
+.animation-leave {
   z-index: 1;
   display: flex;
   alignItems: stretch;
@@ -88,7 +88,7 @@ renderer.renderStatic(`
   top: 0;
   left: 0;
 }
-.example-leave.example-leave-active {
+.animation-leave.animation-leave-active {
 }`)
 
 export function getRenderer () {

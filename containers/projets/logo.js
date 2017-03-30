@@ -40,10 +40,7 @@ const logo = ({noShadow}) => ({
 
 const logoC = ({ styles, src, alt }) =>
   (<img className={styles} src={src} alt={alt} />)
-const mapStylesToProps =
-  props =>
-    renderer =>
-      renderer.renderRule(logo, props)
+const mapStylesToProps = props => renderer => renderer.renderRule(logo, props)
 
 const Logo = connect(mapStylesToProps)(logoC)
 const Container = createComponent(container, 'div')

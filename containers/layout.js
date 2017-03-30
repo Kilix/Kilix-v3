@@ -1,4 +1,6 @@
+import Head from 'next/head'
 import { createComponent } from 'react-fela'
+
 const container = ({color, gradient}) => ({
   flex: 1,
   display: 'flex',
@@ -6,4 +8,14 @@ const container = ({color, gradient}) => ({
   backgroundColor: color,
   background: gradient,
 })
-export default createComponent(container, 'div')
+
+const Container = createComponent(container, 'div')
+
+export default ({ title, color, gradient,  children }) => (
+  <Container {...{color, gradient}}>
+    <Head>
+      <title>{ title }</title>
+    </Head>
+    {children}
+  </Container>
+)

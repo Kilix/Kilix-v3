@@ -5,6 +5,7 @@ import Title from './title'
 
 export default () => (
   <Page
+  title='Contact'
     color='#ED4E4F'
     gradient='linear-gradient(0deg, #FE5E3C 0%, #D83A66 100%)'
   >

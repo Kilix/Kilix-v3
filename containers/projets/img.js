@@ -7,11 +7,7 @@ const img = () => ({
     maxWidth: '650px',
   }
 })
-const Img = ({ styles }) =>
-  <img className={styles} src='static/assets/work-placeholder.png' alt='placeholder' />
-const mapStylesToProps =
-  props =>
-    renderer =>
-      renderer.renderRule(img, props)
+const Img = ({ styles }) => <img className={styles} src='static/assets/work-placeholder.png' alt='placeholder' />
 
+const mapStylesToProps = props => renderer => renderer.renderRule(img, props)
 export default connect(mapStylesToProps)(Img)
