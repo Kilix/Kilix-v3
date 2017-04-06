@@ -1,7 +1,6 @@
-import { createComponent, connect } from 'react-fela'
-import Router from 'next/router'
+import { createComponent } from 'react-fela'
 
-const li = ({isActive}) => ({
+export default createComponent(({ isActive, isRounded }) => ({
   position: 'relative',
   marginTop: 25,
   marginBottom: 25,
@@ -17,53 +16,30 @@ const li = ({isActive}) => ({
     backgroundColor: '#FFFFFF',
     transition: 'height .3s ease-out'
   },
+  extend: [
+    {
+        condition: isRounded,
+        style: {
+          border: '2px solid white',
+          borderRadius: '50px',
+          background: 'rgba(255, 255, 255, 0.2)',
+          padding: '10px 23px',
+          boxShadow: '0 3px 12px 1px rgba(0, 0, 0, 0.2);'
+        }
+    },
+    {
+      condition: isActive && !isRounded,
+      style: {
+        ':after': {
+          height: '2px',
+        }
+      }
+    },
+  ],
   desktopUp: {
     marginTop: 0,
     marginBottom: 0,
-    paddingLeft: 25,
-    paddingRight: 25,
+    marginLeft: 25,
+    marginRight: 25,
   },
-  extend: {
-    condition: isActive === true,
-    style: {
-      ':after': {
-        height: '2px',
-      }
-    }
-  },
-})
-
-const link = () => ({
-  fontSize: 2,
-  fontWeight: '300',
-  color: '#fff',
-  textDecoration: 'none',
-  desktopUp: {
-    fontSize: 1,
-  },
-})
-
-const CustomLink = ({ styles, children, href, as, closeAction }) => (
-  <a
-    className={styles}
-    href={href}
-    onClick={(e) => {
-      e.preventDefault()
-      closeAction()
-      Router.push(href, as)
-    }}
-  >
-    {children}
-  </a>
-)
-const mapStylesToProps = props => renderer => renderer.renderRule(link, props)
-
-const Li = createComponent(li, 'li')
-const Link = connect(mapStylesToProps)(CustomLink)
-export default ({ children, href, as, isActive, closeAction }) => (
-  <Li isActive={isActive}>
-    <Link {...{href, as, closeAction}}>
-      {children}
-    </Link>
-  </Li>
-)
+}), 'li')

@@ -11,7 +11,6 @@ const title = () => ({
   color: '#fff',
   tabletUp: {
     fontSize: 2.5,
-    marginTop: 'auto',
   }
 })
 

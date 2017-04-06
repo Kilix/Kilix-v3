@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { connect } from 'react-fela'
-import svg from '../kilix'
+import kilixLogo from '../kilix-logo'
 
 const logo = () => ({
   position: 'absolute',
@@ -17,9 +17,7 @@ const logo = () => ({
 
 const Logo = ({ styles }) => (
   <Link prefetch href='/?page=home' as='/'>
-    <a>
-      {svg(styles)}
-    </a>
+    {kilixLogo(styles)}
   </Link>
 )
 

@@ -1,6 +1,6 @@
 import { connect } from 'react-fela'
 import Li from './li'
-import svg from '../../kilix'
+import kilixLogo from '../../kilix-logo'
 
 const logo = () => ({
   width: 110,
@@ -11,7 +11,7 @@ const logo = () => ({
 
 const Logo = ({ styles, href, closeAction }) => (
   <Li href='/' as='/' {...{closeAction}} >
-    { svg(styles) }
+    { kilixLogo(styles) }
   </Li>
 )
 

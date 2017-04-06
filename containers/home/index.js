@@ -14,7 +14,7 @@ export default () => (
     <Container>
       <Title>Agence web agile</Title>
       <Subtitle>Nous developpons avec vous des produits web faits maison</Subtitle>
-      <Planet/>
+      <Planet />
     </Container>
   </Page>
 )

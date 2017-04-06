@@ -62,7 +62,7 @@ renderer.renderStatic({
 
 renderer.renderStatic(`
 .animation-enter {
-  z-index: 10;
+  z-index: 2;
   flex: 1;
   display: flex;
   alignItems: stretch;

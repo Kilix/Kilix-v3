@@ -1,23 +1,17 @@
-import { connect } from 'react-fela'
+import { createComponent } from 'react-fela'
+import Box from '../../components/box'
 
-const planet = () => ({
-  position: 'relative',
-  left: -5,
-  width: 120,
-  maxWidth: '740px',
-  marginTop: 40,
-  tabletUp: {
+const PlanetImg = createComponent(() => ({
+  background: `url('static/assets/planet-placeholder.png')`,
+  backgroundSize: '130%',
+  backgroundPosition: 'center bottom',
+  backgroundRepeat: 'no-repeat',
+  flex: 1,
+  desktopUp: {
     marginTop: 'auto',
+    backgroundSize: '65%',
+    backgroundPosition: 'center 35px',
   }
-})
+}), Box)
 
-const Planet = ({styles}) =>
-  <img
-    className={styles}
-    src='static/assets/planet-placeholder.png'
-    alt='planete'
-  />
-
-const mapStylesToProps = props => renderer => renderer.renderRule(planet, props)
-      
-export default connect(mapStylesToProps)(Planet)
+export default PlanetImg
