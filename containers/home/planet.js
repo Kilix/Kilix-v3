@@ -4,7 +4,7 @@ import Box from '../../components/box'
 const ParallaxImg = createComponent(({ src }) => ({
   backgroundImage: `url('static/assets/${src}')`,
   backgroundSize: '130%',
-  backgroundPosition: 'center bottom',
+  backgroundPosition: '50% 20%',
   backgroundRepeat: 'no-repeat',
   position: 'absolute',
   top: 0,

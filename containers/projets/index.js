@@ -1,6 +1,7 @@
 import Page from '../layout'
 import Container from '../container'
 import Box from '../../components/box'
+import GoTo from '../../components/goto'
 import SpeContainer from './spe-container'
 import ContainerProjects from './container'
 import Work from './img'
@@ -43,6 +44,7 @@ export default ({url}) => (
             </Box>
           </Box>
       </Box>
+      <GoTo to="contact" title="Contact" />
     </SpeContainer>
   </Page>
 )

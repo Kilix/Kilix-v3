@@ -4,6 +4,7 @@ import kilixLogo from '../kilix-logo'
 
 const logo = () => ({
   position: 'absolute',
+  zIndex: 10,
   top: 12,
   left: 20,
   width: '60px',
@@ -17,7 +18,9 @@ const logo = () => ({
 
 const Logo = ({ styles }) => (
   <Link prefetch href='/?page=home' as='/'>
-    {kilixLogo(styles)}
+    <a>
+      {kilixLogo(styles)}
+    </a>
   </Link>
 )
 

@@ -2,6 +2,7 @@ import Page from '../layout'
 import Container from '../container'
 
 import Box from '../../components/box'
+import GoTo from '../../components/goto'
 import Title from './title'
 import Subtitle from './subtitle'
 import Planet from './planet'
@@ -18,6 +19,7 @@ export default () => (
         <Subtitle>Nous developpons avec vous des produits web faits maison</Subtitle>
       </Box>
       <Planet />
+      <GoTo to="offres" title="Offres" />
     </Container>
   </Page>
 )

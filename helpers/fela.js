@@ -72,7 +72,7 @@ renderer.renderStatic(`
   width: 100%;
   height: 100vh;
   clip-path: circle(0% at 50% 100vh);
-  transition: all .5s ease-in-out;
+  transition: all .5s cubic-bezier(.6,0,.4,1);
 }
 
 .animation-enter.animation-enter-active {
@@ -95,11 +95,11 @@ renderer.renderStatic(`
 
 @media (min-width: 1025px) {
   .animation-enter {
-    clip-path: circle(0% at 100% 100vh);
+    clip-path: circle(0% at 50% 100vh);
   }
   
   .animation-enter.animation-enter-active {
-    clip-path: circle(120vw at 100% 100vh);
+    clip-path: circle(70vw at 50% 100vh);
   }
 }
 

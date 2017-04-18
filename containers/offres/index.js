@@ -2,6 +2,7 @@ import Page from '../layout'
 import Container from '../container'
 
 import Box from '../../components/box'
+import GoTo from '../../components/goto'
 
 import Card from './card'
 import ContainerOffers from './container'
@@ -45,6 +46,7 @@ export default ({url}) => (
           text='Avec l’aide de nos guides choisissez l’itinéraire de formation qui correspond le mieux à vos équipes, votre culture et montez rapidement en compétences.'
         />
       </ContainerOffers>
+      <GoTo to="projets" title="Projets" />
     </Container>
   </Page>
 )
