@@ -5,7 +5,8 @@ const text = () => ({
   margin: 0,
   padding: 0,
   color: '#fff',
-  textAlign: 'center',
+  fontSize: 1.1,
+  marginTop: 10,
 })
 
 export default createComponent(text, 'p')

@@ -6,11 +6,11 @@ const containerOffers = () => ({
   flexDirection: 'row',
   justifyContent: 'space-around',
   alignItems: 'stretch',
-  maxWidth: '1400px',
+  maxWidth: '1300px',
   width: 100,
   paddingBottom: 25,
   tabletUp: {
-    marginBottom: 'auto',
+    marginTop: 60,
   },
 })
 

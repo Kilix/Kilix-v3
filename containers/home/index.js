@@ -1,6 +1,7 @@
 import Page from '../layout'
 import Container from '../container'
 
+import Box from '../../components/box'
 import Title from './title'
 import Subtitle from './subtitle'
 import Planet from './planet'
@@ -12,8 +13,10 @@ export default () => (
     gradient='linear-gradient(270deg, #1DD1D8 0%, #3A88D5 100%)'
   >
     <Container>
-      <Title>Agence web agile</Title>
-      <Subtitle>Nous developpons avec vous des produits web faits maison</Subtitle>
+      <Box margin="0 15px 0 15px">
+        <Title>Agence web agile</Title>
+        <Subtitle>Nous developpons avec vous des produits web faits maison</Subtitle>
+      </Box>
       <Planet />
     </Container>
   </Page>

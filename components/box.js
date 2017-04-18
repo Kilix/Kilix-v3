@@ -6,12 +6,12 @@ const Box = props => ({
   margin: props.margin,
   border: props.border,
   borderWidth: props.borderWidth,
-  overflow: props.overflow ? 'visible' : 'hidden',
+  overflow: props.overflow && 'visible',
   maxWidth: '100%',
 
   // flex props
   flexGrow: props.grow === true ? 1 : props.grow,
-  flexShrink: props.shrink || 0,
+  flexShrink: props.shrink || 1,
   flexBasis: props.basis || 'auto',
   flex: props.flex === true ? 1 : props.flex,
   justifyContent: props.justifyContent || props.center && 'center',

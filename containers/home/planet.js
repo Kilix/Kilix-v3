@@ -1,12 +1,16 @@
 import { createComponent } from 'react-fela'
 import Box from '../../components/box'
 
-const PlanetImg = createComponent(() => ({
-  background: `url('static/assets/planet-placeholder.png')`,
+const ParallaxImg = createComponent(({ src }) => ({
+  backgroundImage: `url('static/assets/${src}')`,
   backgroundSize: '130%',
   backgroundPosition: 'center bottom',
   backgroundRepeat: 'no-repeat',
-  flex: 1,
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
   desktopUp: {
     marginTop: 'auto',
     backgroundSize: '65%',
@@ -14,4 +18,15 @@ const PlanetImg = createComponent(() => ({
   }
 }), Box)
 
-export default PlanetImg
+const PlanetContainer = createComponent(({ src }) => ({
+  position: 'relative',
+  flex: 1,
+}), Box)
+
+export default () => (
+  <PlanetContainer>
+    <ParallaxImg src="atmosphere-only.png" />
+    <ParallaxImg src="cloud-only.png" />
+    <ParallaxImg src="planet-only.png" />
+  </PlanetContainer>
+)

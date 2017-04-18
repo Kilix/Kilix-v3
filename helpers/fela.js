@@ -71,13 +71,14 @@ renderer.renderStatic(`
   left: 0;
   width: 100%;
   height: 100vh;
-  clip-path: circle(0% at 100% 100vh);
+  clip-path: circle(0% at 50% 100vh);
   transition: all .5s ease-in-out;
 }
 
 .animation-enter.animation-enter-active {
-  clip-path: circle(120vw at 100% 100vh);
+  clip-path: circle(120vh at 50% 100vh);
 }
+
 .animation-leave {
   z-index: 1;
   display: flex;
@@ -88,8 +89,21 @@ renderer.renderStatic(`
   top: 0;
   left: 0;
 }
+
 .animation-leave.animation-leave-active {
-}`)
+}
+
+@media (min-width: 1025px) {
+  .animation-enter {
+    clip-path: circle(0% at 100% 100vh);
+  }
+  
+  .animation-enter.animation-enter-active {
+    clip-path: circle(120vw at 100% 100vh);
+  }
+}
+
+`)
 
 export function getRenderer () {
   return renderer

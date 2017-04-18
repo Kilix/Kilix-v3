@@ -4,7 +4,7 @@ const containerProjects = () => ({
   display: 'flex',
   flexWrap: 'wrap',
   flexDirection: 'row',
-  justifyContent: 'center',
+  justifyContent: 'flex-start',
   alignItems: 'flex-start',
   width: 100,
   tabletUp: {

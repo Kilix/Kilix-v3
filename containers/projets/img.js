@@ -1,13 +1,18 @@
-import { connect } from 'react-fela'
+import { createComponent } from 'react-fela'
+import Box from '../../components/box'
 
-const img = () => ({
+const Img = createComponent(() => ({
   position: 'relative',
   width: 100,
   desktopUp: {
     maxWidth: '650px',
+    transform: 'translateX(-100px) scale(1.6)'
   }
-})
-const Img = ({ styles }) => <img className={styles} src='static/assets/work-placeholder.png' alt='placeholder' />
+}), 'img', ['src', 'alt'])
 
-const mapStylesToProps = props => renderer => renderer.renderRule(img, props)
-export default connect(mapStylesToProps)(Img)
+
+export default () => (
+  <Box center>
+    <Img src='static/assets/illu_references.png' alt='placeholder' />
+  </Box>
+)

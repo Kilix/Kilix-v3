@@ -1,4 +1,5 @@
 import { connect } from 'react-fela'
+import Router from 'next/router'
 import Li from './li'
 import kilixLogo from '../../kilix-logo'
 
@@ -11,7 +12,9 @@ const logo = () => ({
 
 const Logo = ({ styles, href, closeAction }) => (
   <Li href='/' as='/' {...{closeAction}} >
-    { kilixLogo(styles) }
+    <a onClick={(e) => { e.preventDefault(); closeAction(); Router.push('/?page=home', '/') }}>
+      {kilixLogo(styles)}
+    </a>
   </Li>
 )
 
