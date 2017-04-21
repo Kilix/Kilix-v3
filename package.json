@@ -22,8 +22,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node server.js",
-    "heroku-postbuild": "heroku-nextjs-build"
+    "start": "node server.js"
   },
   "devDependencies": {
     "standard": "^8.6.0"
@@ -31,8 +30,5 @@
   "engines": {
     "node": "7.8.0",
     "npm": "4.2.0"
-  },
-  "cacheDirectories": [
-    "nextjs/node_modules"
-  ]
+  }
 }
