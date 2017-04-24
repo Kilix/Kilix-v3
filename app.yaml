@@ -12,9 +12,11 @@
 # limitations under the License.
 #
 # [START runtime]
-service: kilix-v3
 runtime: nodejs
 env: flex
 env_variables:
   MY_PORT: '8080'
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
 # [END runtime]
