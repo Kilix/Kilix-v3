@@ -20,11 +20,15 @@
     "react-fela": "^4.2.0"
   },
   "scripts": {
-    "dev": "NODE_ENV=development node server.js",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "standard": "^8.6.0"
+  },
+  "engines": {
+    "node": "7.8.0",
+    "npm": "4.2.0"
   }
 }
