@@ -3,7 +3,7 @@ import { createComponent } from 'react-fela'
 const containerOffers = () => ({
   display: 'flex',
   flexWrap: 'wrap',
-  flexDirection: 'row',
+  flexDirection: 'column',
   justifyContent: 'space-around',
   alignItems: 'stretch',
   maxWidth: '1300px',
@@ -11,6 +11,7 @@ const containerOffers = () => ({
   paddingBottom: 25,
   tabletUp: {
     marginTop: 60,
+    flexDirection: 'row',
   },
 })
 

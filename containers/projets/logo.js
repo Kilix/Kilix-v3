@@ -25,7 +25,7 @@ const container = ({noShadow}) => ({
       boxShadow: '0 0 20px 4px rgba(0,0,0,0.1)',
       cursor: 'pointer',
       height: '65px',
-      width: '40%',
+      width: '130px',
       desktopUp: {
         width: '180px',
         height: '85px',

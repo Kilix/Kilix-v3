@@ -4,7 +4,7 @@ import Li from './li'
 import kilixLogo from '../../kilix-logo'
 
 const logo = () => ({
-  width: 110,
+  width: 100,
   desktopUp: {
     display: 'none',
   },

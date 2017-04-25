@@ -27,9 +27,15 @@ export default ({url}) => (
           <Box margin="15px 0 0 0">
             <Text>Voir nos projets en ligne :</Text>
             <Box row wrap>
-              <Logo src='static/assets/ffb-logo.svg' alt='ffb'/>
-              <Logo src='static/assets/amnesty-logo.svg' alt='amnesty'/>
-              <Logo src='static/assets/horizon-logo.png' alt='horizon'/>
+              <a href="https://www.ffbridge.fr/" target="_blank" title="Fédération française de Bridge">
+                <Logo src='static/assets/ffb-logo.svg' alt='ffb'/>
+              </a>
+              <a href="https://amnesty.fr/" target="_blank" title="Amnesty International France">
+                <Logo src='static/assets/amnesty-logo.svg' alt='amnesty'/>
+              </a>
+              <a href="http://cop21horizon.com/" target="_blank" title="Horizon - Social Media Analysis">
+                <Logo src='static/assets/horizon-logo.png' alt='horizon'/>
+              </a>
             </Box>
           </Box>
           <Box margin="15px 0 15px 0">

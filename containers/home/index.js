@@ -6,6 +6,8 @@ import GoTo from '../../components/goto'
 import Title from './title'
 import Subtitle from './subtitle'
 import Planet from './planet'
+import Asterix from './asterix'
+import AsterixExplanation from './asterix-explanation'
 
 export default () => (
   <Page
@@ -15,11 +17,15 @@ export default () => (
   >
     <Container>
       <Box margin="0 15px 0 15px">
-        <Title>Agence web agile</Title>
-        <Subtitle>Nous developpons avec vous des produits web faits maison</Subtitle>
+        <Title>
+          Agence web agile
+          <Asterix>*</Asterix>
+        </Title>
+        <Subtitle>Nous développons avec vous des produits web faits maison</Subtitle>
       </Box>
       <Planet />
       <GoTo to="offres" title="Offres" />
+      <AsterixExplanation>* Ceci est notre MVP !</AsterixExplanation>
     </Container>
   </Page>
 )
