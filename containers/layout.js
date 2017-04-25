@@ -12,7 +12,7 @@ const Layout = createComponent(({color, gradient}) => ({
 export default ({ title, color, gradient,  children }) => (
   <Layout {...{color, gradient}}>
     <Head>
-      <title>{ title }</title>
+      <title>Kilix - { title }</title>
     </Head>
     {children}
   </Layout>

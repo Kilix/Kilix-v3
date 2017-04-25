@@ -9,7 +9,7 @@ import Planet from './planet'
 
 export default () => (
   <Page
-    title='Kilix'
+    title='Agence web agile'
     color='#8E71F9'
     gradient='linear-gradient(270deg, #1DD1D8 0%, #3A88D5 100%)'
   >
